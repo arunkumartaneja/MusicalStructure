@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/song_list_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/album">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="@color/transparent_background"
+        android:textColor="@color/font_color"
+        android:textSize="@dimen/font_size"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/song_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/black"
+        android:background="@color/transparent_background"
+        android:textSize="@dimen/subtitle_font_size"
+        android:textStyle="italic" />
+
+
+    <ListView xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/transparent_background"
+        android:orientation="vertical"
+        android:divider="@null"
+        android:dividerHeight="@dimen/divider_height"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.abnd.android.musicalstructure.activity.SongListActivity" />
+
+</LinearLayout>
