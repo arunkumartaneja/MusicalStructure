@@ -28,7 +28,6 @@
                 android:textSize="@dimen/font_size"
                 android:textStyle="bold" />
 
-
             <TextView
                 android:id="@+id/playing_artist"
                 android:layout_width="wrap_content"
@@ -39,7 +38,6 @@
                 android:textColor="@android:color/white"
                 android:textSize="@dimen/subtitle_font_size"
                 android:textStyle="italic" />
-
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -52,8 +50,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="end"
-                    android:textSize="@dimen/subtitle_font_size"
-                    android:textColor="@android:color/white" />
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/subtitle_font_size" />
 
                 <SeekBar
                     android:id="@+id/seek_bar"
@@ -63,21 +61,18 @@
                     android:layout_weight="4"
                     android:min="0" />
 
-
                 <TextView
                     android:id="@+id/playing_duration"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center_vertical"
-                    android:textSize="@dimen/subtitle_font_size"
-                    android:textColor="@android:color/white" />
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/subtitle_font_size" />
 
             </LinearLayout>
 
-
         </LinearLayout>
-
 
     </RelativeLayout>
 
@@ -100,38 +95,35 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/title_font_color"
-                android:src="@android:drawable/ic_media_previous"
-                android:contentDescription="@string/previous"/>
+                android:contentDescription="@string/previous"
+                android:src="@android:drawable/ic_media_previous" />
 
             <ImageButton
                 android:id="@+id/play"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/title_font_color"
+                android:contentDescription="@string/play"
                 android:src="@android:drawable/ic_media_play"
-                android:visibility="gone"
-                android:contentDescription="@string/play"/>
+                android:visibility="gone" />
 
             <ImageButton
                 android:id="@+id/pause"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/title_font_color"
-                android:src="@android:drawable/ic_media_pause"
-                android:contentDescription="@string/pause"/>
+                android:contentDescription="@string/pause"
+                android:src="@android:drawable/ic_media_pause" />
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/title_font_color"
-                android:src="@android:drawable/ic_media_next"
-                android:contentDescription="@string/next"/>
-
+                android:contentDescription="@string/next"
+                android:src="@android:drawable/ic_media_next" />
 
         </LinearLayout>
 
-
     </RelativeLayout>
-
 
 </RelativeLayout>
